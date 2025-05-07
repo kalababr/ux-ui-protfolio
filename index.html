@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="pics/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>stella</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/three@0.146.0/build/three.min.js"></script>
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+  </head>
+  <body class="cursor-hidden">
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-follower"></div>
+    
+    <header id="header" class="header">
+      <div class="container header-content">
+        <a href="#" class="logo">stella.</a>
+        
+        <!-- Desktop Navigation -->
+        <nav class="nav-list" id="desktop-nav">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#contact" class="btn btn-primary">Contact Me</a>
+        </nav>
+        
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" class="mobile-menu-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <line x1="4" y1="12" x2="20" y2="12"></line>
+            <line x1="4" y1="6" x2="20" y2="6"></line>
+            <line x1="4" y1="18" x2="20" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="mobile-menu">
+        <nav class="mobile-nav">
+          <a href="#home" class="mobile-nav-link">Home</a>
+          <a href="#projects" class="mobile-nav-link">Projects</a>
+          <a href="#about" class="mobile-nav-link">About</a>
+          <a href="#contact" class="btn btn-primary mobile-btn">Contact Me</a>
+        </nav>
+      </div>
+    </header>
+    
+    <section id="home" class="hero">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <p class="tag">UX/UI Designer</p>
+          <h1 class="hero-title">Creating digital experiences that delight users</h1>
+          <p class="hero-description">I craft interfaces that blend intuition with innovation, transforming complex challenges into seamless user experiences.</p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View My Projects</a>
+            <a href="#" class="btn btn-secondary">Download Resume</a>
+          </div>
+          <div class="social-links">
+            <p>Follow Me:</p>
+            <a href="#">Dribbble</a>
+            <a href="#">Behance</a>
+            <a href="#">LinkedIn</a>
+          </div>
+        </div>
+        
+        <div class="hero-visual">
+          <div id="scene-container" class="scene-3d"></div>
+          <div class="glow-effect"></div>
+          <div class="floating-element ui-element">
+            <div>UI</div>
+          </div>
+          <div class="floating-element ux-element">
+            <div>UX</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="projects" class="projects reveal">
+      <div class="container section-header">
+        <p class="tag">Portfolio</p>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-description">A showcase of my design work across various industries and platforms, highlighting my approach to solving complex UX/UI challenges.</p>
+      </div>
+      
+      <div class="container projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card reveal">
+          <div class="project-image" style="background-color: rgba(155, 135, 245, 0.1)">
+            <img src="pics/pic1.avif" alt="FinanceFlow Dashboard">
+            <span class="tag-badge" style="color: #9b87f5">UX Design</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">FinanceFlow Dashboard</h3>
+            <p class="project-description">A comprehensive financial dashboard with intuitive data visualization and user-friendly controls.</p>
+            <div class="project-tags">
+              <span class="tag">UI Design</span>
+              <span class="tag">Dashboard</span>
+            </div>
+            <a href="#" class="project-link">
+              View Case Study
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" class="ml-2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Project 2 -->
+        <div class="project-card reveal">
+          <div class="project-image" style="background-color: rgba(217, 70, 239, 0.1)">
+            <img src="pics/pic2.avif" alt="TravelBuddy Mobile App">
+            <span class="tag-badge" style="color: #D946EF">Mobile Design</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">TravelBuddy Mobile App</h3>
+            <p class="project-description">A mobile app designed for travelers to plan, book, and share their adventures effortlessly.</p>
+            <div class="project-tags">
+              <span class="tag">UI/UX</span>
+              <span class="tag">App</span>
+            </div>
+            <a href="#" class="project-link">
+              View Case Study
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" class="ml-2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Project 3 -->
+        <div class="project-card reveal">
+          <div class="project-image" style="background-color: rgba(110, 89, 165, 0.1)">
+            <img src="pics/pic3.avif" alt="EcoTrack Platform">
+            <span class="tag-badge" style="color: #6E59A5">Web Design</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">EcoTrack Platform</h3>
+            <p class="project-description">An environmental monitoring platform that helps users track and reduce their carbon footprint.</p>
+            <div class="project-tags">
+              <span class="tag">Dashboard</span>
+              <span class="tag">UX Research</span>
+            </div>
+            <a href="#" class="project-link">
+              View Case Study
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" class="ml-2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="container text-center">
+        <a href="#" class="btn btn-secondary">View All Projects</a>
+      </div>
+    </section>
+    
+    <section id="about" class="about reveal">
+      <div class="container about-content">
+        <div class="about-text">
+          <p class="tag">About Me</p>
+          <h2 class="section-title">Passionate about creating meaningful digital experiences</h2>
+          <p>With over 5 years of experience in UX/UI design, I've had the privilege of working with startups and established companies across various industries. My approach combines data-driven insights with creative problem-solving to design products that not only look good but deliver tangible business results.</p>
+          <p>I believe that great design happens at the intersection of user needs, business goals, and technological possibilities. My process involves deep user research, collaborative ideation, and iterative testing to create experiences that truly resonate with users.</p>
+          <div class="stats">
+            <div class="stat">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Years of Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">50+</span>
+              <span class="stat-label">Projects Completed</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">20+</span>
+              <span class="stat-label">Happy Clients</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="skills-card">
+          <h3>Skills & Expertise</h3>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">UI Design</span>
+                <span class="skill-percentage">95%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" data-percentage="95"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">UX Research</span>
+                <span class="skill-percentage">85%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" data-percentage="85"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Wireframing</span>
+                <span class="skill-percentage">90%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" data-percentage="90"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Prototyping</span>
+                <span class="skill-percentage">88%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" data-percentage="88"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Design Systems</span>
+                <span class="skill-percentage">92%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" data-percentage="92"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">User Testing</span>
+                <span class="skill-percentage">80%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" data-percentage="80"></div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="design-tools">
+            <h3>Design Tools</h3>
+            <div class="tools-list">
+              <span class="tool-tag">Figma</span>
+              <span class="tool-tag">Sketch</span>
+              <span class="tool-tag">Adobe XD</span>
+              <span class="tool-tag">InVision</span>
+              <span class="tool-tag">Principle</span>
+              <span class="tool-tag">Zeplin</span>
+              <span class="tool-tag">Framer</span>
+              <span class="tool-tag">Miro</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="contact" class="contact reveal">
+      <div class="container text-center">
+        <p class="tag">Get In Touch</p>
+        <h2 class="section-title">Let's Work Together</h2>
+        <p class="section-description">Have a project in mind or want to chat about design? Feel free to reach out! I'm always open to discussing new opportunities and collaborations.</p>
+      </div>
+      
+      <div class="container contact-grid">
+        <div class="contact-form-wrapper">
+          <h3>Send Me a Message</h3>
+          <form id="contact-form" class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+        
+        <div class="contact-info-wrapper">
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+            <ul class="info-list">
+              <li class="info-item">
+                <div class="info-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <p class="info-label">Phone</p>
+                  <p class="info-text">(123) 456-7890</p>
+                </div>
+              </li>
+              <li class="info-item">
+                <div class="info-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <p class="info-label">Email</p>
+                  <p class="info-text">hello@stelladesign.com</p>
+                </div>
+              </li>
+              <li class="info-item">
+                <div class="info-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <p class="info-label">Location</p>
+                  <p class="info-text">Addis Abeba, ET</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="connect-section">
+            <h3>Let's Connect</h3>
+            <div class="social-icons">
+              <a href="#" class="social-icon">D</a>
+              <a href="#" class="social-icon">B</a>
+              <a href="#" class="social-icon">L</a>
+              <a href="#" class="social-icon">T</a>
+              <a href="#" class="social-icon">I</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="footer-logo">
+          <a href="#" class="logo">stella.</a>
+          <p>Creating delightful digital experiences through thoughtful UX/UI design.</p>
+          <div class="social-links">
+            <a href="#" class="social-link">D</a>
+            <a href="#" class="social-link">B</a>
+            <a href="#" class="social-link">L</a>
+            <a href="#" class="social-link">T</a>
+            <a href="#" class="social-link">I</a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Services</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact">
+          <h3>Contact</h3>
+          <ul>
+            <li><span>Email:</span> <a href="mailto:hello@stelladesign.com">hello@stelladesign.com</a></li>
+            <li><span>Phone:</span> (123) 456-7890</li>
+            <li><span>Location:</span> Addis Abeba,ET</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year">2025</span> Stella Design. All rights reserved.</p>
+      </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+  </body>
+</html>
